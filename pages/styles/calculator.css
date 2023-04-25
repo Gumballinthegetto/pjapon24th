@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #393053;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.calculator-grid {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 5rem auto;
+}
+
+.calculator-grid > button {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+    color: #fff;
+    background-color: #393053;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #fff;
+    background-color: #18122B;
+    word-wrap: break-word;
+    word-break: break-all;
+    grid-column: 1 / -1;
+}
+
+.previous-operand {
+    font-size: 1.5rem;
+}
+
+.current-operand {
+    font-size: 3rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.curve-left {
+    border-bottom-left-radius: 8px;
+}
+
+.curve-right {
+    border-bottom-right-radius: 8px;
+}

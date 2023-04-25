@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+table {
+    border-spacing: 10px;
+    margin: 0 auto;
+}
+
+th {
+    border: 1px solid;
+}
+
+td {
+    text-align: left;
+    border: 1px solid;
+}
+
+.center {
+    text-align: center;
+}
+
+.first-col {
+    padding-right: 15px;
+}
+
+.second-col {
+    padding-right: 60px;
+}
+
+.third-col {
+    padding-right: 20px;
+}

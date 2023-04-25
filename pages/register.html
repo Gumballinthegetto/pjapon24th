@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/register.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="middlename">Middlename:</label>
+            <input type="text" name="middlename" id="middlename">
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname">
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Course:
+                <select name="" id="dropdown">
+                    <option value="Course">Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </label>
+            <label>
+                Gender:
+                <label for="male"><input type="radio" name="M-F-Other" value="Male" id="male">Male</label>
+                <label for="female"><input type="radio" name="M-F-Other" value="Female" id="female">Female</label>
+                <label for="other"><input type="radio" name="M-F-Other" value="Other" id="other">Other</label>
+            </label>
+            <label for="country-num">
+                Phone: 
+                <input type="number" placeholder="+855" required id="country-num">
+                <input type="number" required id="phone-num">
+            </label>
+            <label for="address">
+                Address:
+                <textarea name="address" rows="10" id="address"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="email">
+                Email: <input type="email" id="email" required>
+            </label>
+            <label for="password">
+                Password: <input type="password" id="password" required>
+            </label>
+            <label for="re-type">
+                Re-type password: <input type="password" id="re-type" required>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit-btn">
+    </form>
+</body>
+</html>

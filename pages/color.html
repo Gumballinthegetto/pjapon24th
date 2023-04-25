@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/color.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Some HTML Colors</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            border: none;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+            border: 1px solid;
+        }
+
+        body {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            border: none;
+        }
+
+        h3 {
+            font-weight: bold;
+            border: none;
+            margin-bottom: -2px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        th, td {
+            padding: 10px 25px;
+        }
+
+        .monospace {
+            font-family: "Roboto Mono", sans-serif;
+        }
+
+        .small-box {
+            padding: 10px 15px;
+        }
+
+        #first-color {
+            background-color: #FA8072;
+        }
+
+        #second-color {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <h3>Some HTML Colors</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="small-box">Colour</th>
+                <th>Name</th>
+                <th>hexidecimal</th>
+                <th>RGB value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="small-box" id="first-color"></td>
+                <td class="monospace">Salmon</td>
+                <td class="monospace">FA8072</td>
+                <td>250-128-114</td>
+            </tr>
+            <tr>
+                <td class="small-box" id="second-color"></td>
+                <td class="monospace">Gold</td>
+                <td class="monospace">FFD700</td>
+                <td>255-215-0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

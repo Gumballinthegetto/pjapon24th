@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: fit-content;
+    border: 1px solid;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+nav h4 {
+    margin-top: -8px;
+    margin-left: 2px;
+}
+
+nav ul {
+    margin-top: -10px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+section p {
+    line-height: 180%;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+section h1 {
+    margin-bottom: -5px;
+}
+
+.em {
+    color: blue;
+}

@@ -1,0 +1,16 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+table {
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+tfoot {
+    text-align: center;
+}

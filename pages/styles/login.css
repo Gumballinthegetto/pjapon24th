@@ -1,0 +1,365 @@
+:root {
+    /* COLORS */
+    --bold-color-FE-logo: #0C405E;
+    --mild-color-FE-logo: #014066;
+    --secondary-text-color: #434242;
+    --bold-color-black: #181823;
+    --mild-color-black: #20262E;
+    --bg-FE-color: #FCFEFE;
+
+    /* FONTS */
+    --primary-font: 'Noto Sans', sans-serif;
+    --secondary-font: 'Noto Sans Mono', monospace;
+    --header-font: 'Bungee Shade', cursive;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a { 
+    position: relative;
+    text-decoration: none;
+    color: var(--bold-color-black);
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--bold-color-FE-logo);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.left {
+    position: relative;
+    max-width: 450px;
+    height: 100vh;
+}
+
+.left header {
+    border-right: 2px solid var(--bold-color-black);
+    border-bottom: 2px solid var(--bold-color-black);
+    padding: 10px;
+    color: var(--bold-color-FE-logo);
+    width: fit-content;
+}
+
+.left header h1 {
+    font-weight: normal;
+}
+
+.secondary {
+    color: var(--secondary-text-color);
+}
+
+.M2 {
+    font-family: var(--header-font);
+    color: var(--bold-color-FE-logo);
+}
+
+.middle {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    width: 100%;
+}
+
+form {
+    font-size: 0.9rem;
+    border: 2px solid var(--bold-color-black);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+input:not(input[type="checkbox"]) {
+    display: block;
+}
+
+.form-input {
+    margin: 15px 0;
+    padding: 10px 0 10px 5px;
+    border: 2px solid var(--mild-color-black);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--mild-color-black);
+}
+
+.form-input::placeholder {
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    color: var(--mild-color-black);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.flex-item {
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    color: var(--bold-color-black);
+    margin-bottom: 20px;
+}
+
+.sign-up,
+.sign-in {
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    color: var(--bold-color-black);
+    padding: 10px 0;
+}
+
+.sign-in {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.sign-in button {
+    font-family: var(--secondary-font);
+    border: none;
+    background: transparent;
+}
+   
+.sign-in::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: var(--bold-color-FE-logo);
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+   
+.sign-in .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+   
+.sign-in .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+   
+.sign-in .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+   
+.sign-in .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+   
+.sign-in:hover {
+    color: white;
+    background: var(--bold-color-FE-logo);
+}
+   
+.sign-in:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+   
+.sign-in:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+   
+.sign-in:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+   
+.sign-in:hover .bottom-key-1,
+.sign-in:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.separator {
+    display: block;
+    border: 1px solid var(--mild-color-black);
+    width: 50%;
+    margin: 15px auto;
+}
+
+.left header,
+.left footer {
+    font-family: var(--secondary-font);
+}
+
+.left footer {
+    position: absolute;
+    bottom: 1%;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--bold-color-FE-logo);
+    border-top: 2px solid var(--bold-color-black);
+    border-right: 2px solid var(--bold-color-black);
+}
+
+.right {
+    position: relative;
+    border-left: 2px solid var(--bold-color-black);
+    background-color: var(--bg-FE-color);
+}
+
+.right header {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    color: var(--bold-color-FE-logo);
+    font-family: var(--secondary-font);
+    border-left: 2px solid var(--bold-color-black);
+    border-bottom: 2px solid var(--bold-color-black);
+    padding: 10px 2px 10px 10px;
+}
+
+.right img {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .grid {
+        display: block;
+    }
+
+    form {
+        border-left: none;
+        border-right: none;
+        border-radius: 0%;
+    }
+
+    .middle {
+        left: 0;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 650px) {
+    .left {
+        width: 350px;
+    }
+
+    .middle {
+        left: 21%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1280px) {
+    .left {
+        max-width: 620px;
+    }
+
+    .middle {
+        left: 35%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .grid {
+        grid-template-columns: 45% 55%;
+    }
+}

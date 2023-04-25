@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+#header {
+    border: none;
+}

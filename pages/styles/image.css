@@ -1,0 +1,44 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-container {
+    text-align: center;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.top-left,
+.top-right,
+.centered,
+.bottom-left,
+.bottom-right {
+    position: absolute;
+}
+
+.top-left {
+    top: 8px;
+}
+
+.top-right {
+    top: 8px;
+    right: 8px;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+    bottom: 10px;
+}
+
+.bottom-right {
+    right: 8px;
+    bottom: 8px;
+}
